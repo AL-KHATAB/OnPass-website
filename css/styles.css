@@ -236,8 +236,7 @@ footer {
 .feature-grid,
 .card-grid,
 .download-grid,
-.support-grid,
-.tutorial-grid {
+.support-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
     gap: 24px;
@@ -253,7 +252,6 @@ footer {
 .card,
 .download-card,
 .support-card,
-.tutorial-card,
 .policy-card,
 .about-content,
 .step {
@@ -267,7 +265,6 @@ footer {
 .card,
 .download-card,
 .support-card,
-.tutorial-card,
 .policy-card,
 .about-content,
 .preview-card {
@@ -278,7 +275,6 @@ footer {
 .card:hover,
 .download-card:hover,
 .support-card:hover,
-.tutorial-card:hover,
 .step:hover,
 .about-content:hover,
 .preview-card:hover {
@@ -306,7 +302,6 @@ footer {
 .card h3,
 .download-card h3,
 .support-card h3,
-.tutorial-card h3,
 .step h3,
 .about-content h3,
 .preview-card h3,
