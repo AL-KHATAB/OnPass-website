@@ -244,7 +244,6 @@ nav ul li a.active,
 .features,
 .how-it-works,
 .about-brief,
-.quote-section,
 footer {
     padding: 76px 0;
 }
@@ -364,19 +363,6 @@ footer {
     border-radius: 16px;
     margin-bottom: 18px;
     border: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.quote-section {
-    background: linear-gradient(135deg, rgba(35, 43, 56, 0.95), rgba(28, 36, 49, 0.95));
-}
-
-.quote-section blockquote {
-    max-width: 880px;
-    margin: 0 auto;
-    text-align: center;
-    font-size: clamp(1.4rem, 3vw, 2rem);
-    color: var(--text-color);
-    font-style: italic;
 }
 
 .steps-container {
@@ -514,7 +500,6 @@ footer {
     .features,
     .how-it-works,
     .about-brief,
-    .quote-section,
     footer {
         padding: 58px 0;
     }
