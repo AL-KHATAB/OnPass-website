@@ -15,7 +15,7 @@ Static website source for the OnPass project.
 - `download.html` - desktop and extension repository links plus setup flow
 - `export_user_tutorial.html` - export/import guide
 - `privacy_policy.html` - privacy assumptions tied to the actual implementation
-- `contact.html` - GitHub-based support entry points
+- `support.html` - GitHub-based support entry points
 
 ## Development
 
