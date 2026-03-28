@@ -35,4 +35,3 @@ The browser extension that connects to the signed-in desktop app and provides po
 
 - Use the website support page and GitHub repositories for project-related help and issue tracking
 
-Ready to explore OnPass? Browse the website source here and use the linked desktop and extension repositories to view the full project.
