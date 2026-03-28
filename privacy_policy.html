@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnPass Privacy Policy</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/OnPassLogo.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="./index.html" aria-label="OnPass home">
+                <img src="./images/logo.png" alt="OnPass logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Tutorials <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="./export_user_tutorial.html">Export / Import User Data</a>
+                        </div>
+                    </li>
+                    <li><a href="./download.html">Download</a></li>
+                    <li><a href="./contact.html">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">Privacy assumptions</span>
+            <h1>OnPass is designed around local control of sensitive data.</h1>
+            <p>
+                This page describes the practical privacy assumptions behind the project website, the desktop vault, and the extension's localhost integration model.
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <article class="policy-card">
+                <h2>Privacy Policy</h2>
+                <p>OnPass is built with a local-first security model. The desktop application stores vault data on the user's device and performs encryption and decryption locally.</p>
+                <p>The browser extension does not use a remote vault service. Instead, it connects to the signed-in desktop app over localhost and requires a bearer token before credential data is returned.</p>
+
+                <h3>What OnPass is designed to do</h3>
+                <ul>
+                    <li>Store credential data locally on the machine running the desktop app.</li>
+                    <li>Protect saved vault content with encryption before it is written to disk.</li>
+                    <li>Expose credentials to the browser extension only through localhost endpoints on the same machine.</li>
+                    <li>Keep the browser extension dependent on an active desktop session rather than a remote online account.</li>
+                </ul>
+
+                <h3>What this website does not do</h3>
+                <ul>
+                    <li>It does not provide a cloud dashboard for viewing your vault.</li>
+                    <li>It does not submit contact messages to the old third-party Formspree endpoint used by the previous version of this site.</li>
+                    <li>It does not host or process your password data.</li>
+                </ul>
+
+                <h3>User responsibility</h3>
+                <p>You remain responsible for safeguarding your master password, exported user files, and any temporary copies created during backup or migration.</p>
+
+                <h3>Policy changes</h3>
+                <p>If the project architecture changes materially, this page should be updated so the website continues to describe the actual behavior of the desktop app and extension.</p>
+            </article>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="OnPass logo">
+                    <p>Privacy in OnPass comes from local storage, local encryption, and local API boundaries rather than remote trust assumptions.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Site</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./download.html">Download</a></li>
+                        <li><a href="./contact.html">Support</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Repositories</h4>
+                    <p><a href="https://github.com/AL-KHATAB/OnPass-Desktop" target="_blank" rel="noopener">OnPass Desktop</a></p>
+                    <p><a href="https://github.com/AL-KHATAB/OnPass-Extension" target="_blank" rel="noopener">OnPass Extension</a></p>
+                    <div class="social-links">
+                        <a href="https://github.com/AL-KHATAB" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-note">This privacy page is intentionally tied to the current implementation rather than generic marketing language.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

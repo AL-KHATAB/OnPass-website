@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About OnPass</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/OnPassLogo.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="./index.html" aria-label="OnPass home">
+                <img src="./images/logo.png" alt="OnPass logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html" class="active">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Tutorials <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="./export_user_tutorial.html">Export / Import User Data</a>
+                        </div>
+                    </li>
+                    <li><a href="./download.html">Download</a></li>
+                    <li><a href="./contact.html">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">Project overview</span>
+            <h1>What OnPass includes and why it is structured this way.</h1>
+            <p>
+                OnPass combines a Windows desktop password vault, a browser extension, and a localhost communication layer.
+                The architecture keeps security-sensitive data local while still supporting practical browser autofill.
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Core goals</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-desktop"></i></div>
+                    <h3>Windows-first desktop vault</h3>
+                    <p>The desktop app is the primary application. It manages encrypted storage, session state, password history, TOTP entries, and local API access.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-user-lock"></i></div>
+                    <h3>Local-first trust model</h3>
+                    <p>OnPass avoids a remote cloud vault. Sensitive data is stored on-device and decrypted locally after authentication.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+                    <h3>Practical integration</h3>
+                    <p>The extension is designed to work with real login forms, including dynamic sites that re-render fields and use modern front-end frameworks.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">System components</h2>
+            <p class="section-intro">Each part has a clear responsibility so the project remains understandable and maintainable.</p>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-window-maximize"></i></div>
+                    <h3>Desktop application</h3>
+                    <p>Built with WPF and C#. It handles account workflows, encryption, password generation, import/export, biometric login, and the local web server used by the extension.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>Browser extension</h3>
+                    <p>Built as a Manifest V3 extension. It validates tokens with the desktop app, fetches saved credentials locally, ranks them by domain, and autofills login forms.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Local API bridge</h3>
+                    <p>The desktop app exposes localhost endpoints on ports 9876 and 9877. The extension talks to those endpoints only on the same machine and only with a valid bearer token.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <div class="container">
+            <blockquote>
+                "The project favors explicit local control over convenience features that would require a remote trust dependency."
+            </blockquote>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Design priorities</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Security</h3>
+                    <p>Encrypted local storage, session-based extension access, and minimal exposure of credential data outside the signed-in desktop app.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-sitemap"></i></div>
+                    <h3>Maintainability</h3>
+                    <p>Both desktop and extension projects were restructured into clearer modules so the logic is easier to defend, document, and extend.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-check-circle"></i></div>
+                    <h3>Usability</h3>
+                    <p>The project aims to be practical for real users: fast lookup, inline popup autofill, password generation, and export/import support.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="OnPass logo">
+                    <p>OnPass documents the product, not just the UI. The website reflects the actual desktop and extension implementation.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Site</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./download.html">Download</a></li>
+                        <li><a href="./export_user_tutorial.html">Tutorial</a></li>
+                        <li><a href="./privacy_policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Repositories</h4>
+                    <p><a href="https://github.com/AL-KHATAB/OnPass-Desktop" target="_blank" rel="noopener">OnPass Desktop</a></p>
+                    <p><a href="https://github.com/AL-KHATAB/OnPass-Extension" target="_blank" rel="noopener">OnPass Extension</a></p>
+                    <div class="social-links">
+                        <a href="https://github.com/AL-KHATAB" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-note">OnPass is positioned as a local-first password manager with a desktop-first architecture and a companion browser extension.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

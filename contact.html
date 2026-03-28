@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support OnPass</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/OnPassLogo.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="./index.html" aria-label="OnPass home">
+                <img src="./images/logo.png" alt="OnPass logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Tutorials <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="./export_user_tutorial.html">Export / Import User Data</a>
+                        </div>
+                    </li>
+                    <li><a href="./download.html">Download</a></li>
+                    <li><a href="./contact.html" class="active">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">Support channels</span>
+            <h1>Use the project repositories as the primary support path.</h1>
+            <p>
+                This site does not submit messages to a third-party contact form. For issues, feature requests, or setup questions,
+                use the relevant GitHub repository so the discussion stays with the project source.
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Where to go</h2>
+            <div class="support-grid">
+                <article class="support-card">
+                    <div class="support-icon"><i class="fab fa-github"></i></div>
+                    <h3>Desktop app issues</h3>
+                    <p>Use the desktop repository for login, storage, biometric, TOTP, or localhost API issues.</p>
+                    <div class="hero-actions" style="margin-top: 20px;">
+                        <a class="btn btn-primary" href="https://github.com/AL-KHATAB/OnPass-Desktop/issues" target="_blank" rel="noopener">Open desktop issues</a>
+                    </div>
+                </article>
+                <article class="support-card">
+                    <div class="support-icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>Extension issues</h3>
+                    <p>Use the extension repository for popup, token, autofill, domain matching, or website compatibility issues.</p>
+                    <div class="hero-actions" style="margin-top: 20px;">
+                        <a class="btn btn-primary" href="https://github.com/AL-KHATAB/OnPass-Extension/issues" target="_blank" rel="noopener">Open extension issues</a>
+                    </div>
+                </article>
+                <article class="support-card">
+                    <div class="support-icon"><i class="fas fa-user"></i></div>
+                    <h3>Project profile</h3>
+                    <p>Use the GitHub profile to view both repositories, project activity, and future updates to the OnPass ecosystem.</p>
+                    <div class="hero-actions" style="margin-top: 20px;">
+                        <a class="btn btn-secondary" href="https://github.com/AL-KHATAB" target="_blank" rel="noopener">View profile</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Useful documentation</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-file-download"></i></div>
+                    <h3>Setup and download</h3>
+                    <p>Use the download page to find the current desktop and extension repositories and the recommended setup sequence.</p>
+                    <a class="btn btn-secondary" href="./download.html">Open download page</a>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-exchange-alt"></i></div>
+                    <h3>Export / import guide</h3>
+                    <p>Use the tutorial page when moving an OnPass user profile between machines or restoring a previously exported account.</p>
+                    <a class="btn btn-secondary" href="./export_user_tutorial.html">Open tutorial</a>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-user-secret"></i></div>
+                    <h3>Privacy policy</h3>
+                    <p>Read the privacy page for the local-first assumptions that shape how OnPass stores data and serves credentials to the extension.</p>
+                    <a class="btn btn-secondary" href="./privacy_policy.html">Open privacy policy</a>
+                </article>
+            </div>
+            <div class="notice" style="margin-top: 28px;">
+                <strong>Important:</strong>
+                The previous site contact form and external mail endpoint have been removed so this site no longer sends messages to a third-party owner.
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="OnPass logo">
+                    <p>Support is handled in-source through GitHub so bugs and improvements stay attached to the relevant codebase.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Site</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./download.html">Download</a></li>
+                        <li><a href="./privacy_policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Repositories</h4>
+                    <p><a href="https://github.com/AL-KHATAB/OnPass-Desktop" target="_blank" rel="noopener">OnPass Desktop</a></p>
+                    <p><a href="https://github.com/AL-KHATAB/OnPass-Extension" target="_blank" rel="noopener">OnPass Extension</a></p>
+                    <div class="social-links">
+                        <a href="https://github.com/AL-KHATAB" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-note">No third-party contact form is active on this site in its current OnPass version.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

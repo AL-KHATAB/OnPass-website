@@ -1,0 +1,22 @@
+﻿{
+  "name": "onpass-website",
+  "version": "1.0.0",
+  "description": "Static website for the OnPass desktop app and browser extension.",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [
+    "onpass",
+    "password-manager",
+    "browser-extension",
+    "wpf"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "vite": "^5.1.6"
+  }
+}

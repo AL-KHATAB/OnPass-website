@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Download OnPass</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/OnPassLogo.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="./index.html" aria-label="OnPass home">
+                <img src="./images/logo.png" alt="OnPass logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link">Tutorials <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="./export_user_tutorial.html">Export / Import User Data</a>
+                        </div>
+                    </li>
+                    <li><a href="./download.html" class="active">Download</a></li>
+                    <li><a href="./contact.html">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">Project distribution</span>
+            <h1>Get the desktop app and extension from the current project repositories.</h1>
+            <p>
+                The active OnPass builds are managed through GitHub. Use the desktop app as the core product and the browser extension as the companion autofill client.
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Available components</h2>
+            <div class="download-grid">
+                <article class="download-card">
+                    <div class="download-icon"><i class="fab fa-windows"></i></div>
+                    <h3>OnPass Desktop</h3>
+                    <p>The Windows application that stores the encrypted vault, manages authentication, and serves the localhost API for the extension.</p>
+                    <div class="meta-list">
+                        <p><strong>Platform:</strong> Windows desktop</p>
+                        <p><strong>Includes:</strong> vault management, TOTP, password generation, import/export, biometric flow</p>
+                    </div>
+                    <div class="hero-actions" style="margin-top: 24px;">
+                        <a class="btn btn-primary" href="https://github.com/AL-KHATAB/OnPass-Desktop" target="_blank" rel="noopener">Open desktop repo</a>
+                    </div>
+                </article>
+                <article class="download-card">
+                    <div class="download-icon"><i class="fas fa-puzzle-piece"></i></div>
+                    <h3>OnPass Extension</h3>
+                    <p>The browser companion for login detection, domain-ranked suggestions, and autofill backed by the local desktop app session.</p>
+                    <div class="meta-list">
+                        <p><strong>Platform:</strong> Chromium-based browsers</p>
+                        <p><strong>Includes:</strong> popup search, token handshake, inline autofill, localhost-only credential retrieval</p>
+                    </div>
+                    <div class="hero-actions" style="margin-top: 24px;">
+                        <a class="btn btn-primary" href="https://github.com/AL-KHATAB/OnPass-Extension" target="_blank" rel="noopener">Open extension repo</a>
+                    </div>
+                </article>
+            </div>
+            <div class="notice" style="margin-top: 28px;">
+                <strong>Current distribution note:</strong>
+                This website points to the active source repositories. If packaged release assets are published later, this page can be updated to link directly to them.
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">Recommended setup flow</h2>
+            <div class="steps-container">
+                <article class="step">
+                    <div class="step-icon"><i class="fas fa-download"></i></div>
+                    <div>
+                        <h3>1. Get the desktop app</h3>
+                        <p>Clone or download the OnPass Desktop project, build it, and run the Windows client first. The desktop app is required before the extension can retrieve credentials.</p>
+                    </div>
+                </article>
+                <article class="step">
+                    <div class="step-icon"><i class="fas fa-user-cog"></i></div>
+                    <div>
+                        <h3>2. Create or import your vault</h3>
+                        <p>Sign in, create your user profile, or import an existing OnPass export. Populate the vault with credentials you want available in the browser.</p>
+                    </div>
+                </article>
+                <article class="step">
+                    <div class="step-icon"><i class="fas fa-link"></i></div>
+                    <div>
+                        <h3>3. Load the extension</h3>
+                        <p>Open the extension repository, load it into your browser, and connect it to the desktop app. The extension uses localhost ports 9876 and 9877 to validate the desktop session.</p>
+                    </div>
+                </article>
+                <article class="step">
+                    <div class="step-icon"><i class="fas fa-check-double"></i></div>
+                    <div>
+                        <h3>4. Test autofill</h3>
+                        <p>Open a login page, focus a username or password field, and confirm the OnPass inline popup appears with ranked credential suggestions.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title">System requirements</h2>
+            <div class="card-grid">
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-laptop"></i></div>
+                    <h3>Desktop app</h3>
+                    <p>Windows 10 or Windows 11, a working .NET / Visual Studio environment for source builds, and local file access for encrypted vault storage.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-globe"></i></div>
+                    <h3>Browser extension</h3>
+                    <p>A Chromium-based browser with developer mode available so the extension can be loaded locally during development or assessment.</p>
+                </article>
+                <article class="card">
+                    <div class="card-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Local API access</h3>
+                    <p>The browser and desktop app must run on the same machine so the extension can reach the localhost API exposed by the signed-in desktop session.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="OnPass logo">
+                    <p>Use the desktop app as the source of truth, then add the extension for browser workflows.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Site</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./export_user_tutorial.html">Tutorial</a></li>
+                        <li><a href="./privacy_policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Repositories</h4>
+                    <p><a href="https://github.com/AL-KHATAB/OnPass-Desktop" target="_blank" rel="noopener">OnPass Desktop</a></p>
+                    <p><a href="https://github.com/AL-KHATAB/OnPass-Extension" target="_blank" rel="noopener">OnPass Extension</a></p>
+                    <div class="social-links">
+                        <a href="https://github.com/AL-KHATAB" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-note">If binary releases are published later, this page is the right place to point directly to them.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

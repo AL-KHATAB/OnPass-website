@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnPass Export / Import Tutorial</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./images/OnPassLogo.ico">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a class="logo" href="./index.html" aria-label="OnPass home">
+                <img src="./images/logo.png" alt="OnPass logo">
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="nav-link active">Tutorials <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="./export_user_tutorial.html">Export / Import User Data</a>
+                        </div>
+                    </li>
+                    <li><a href="./download.html">Download</a></li>
+                    <li><a href="./contact.html">Support</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="container">
+            <span class="eyebrow">Migration guide</span>
+            <h1>Move an OnPass user profile from one machine to another.</h1>
+            <p>
+                The exact screen labels can change by version, but the migration flow stays the same: export the user data securely,
+                move the files yourself, and import them on the new machine.
+            </p>
+        </div>
+    </section>
+
+    <section class="content-section">
+        <div class="container">
+            <div class="notice">
+                <strong>Security note:</strong>
+                Exported user files should be treated as sensitive material. Only transfer them through a method you control and delete temporary copies when the migration is complete.
+            </div>
+            <div class="tutorial-grid">
+                <article class="tutorial-card">
+                    <h3>1. Export your user data</h3>
+                    <p>In the desktop app, open the export user flow and save the generated files somewhere easy to find, such as a temporary folder on your desktop.</p>
+                </article>
+                <article class="tutorial-card">
+                    <h3>2. Keep the files private</h3>
+                    <p>Do not send the exported files through public channels or share them with anyone else. Use a transfer method you control, such as encrypted removable media or a secure private transfer path.</p>
+                </article>
+                <article class="tutorial-card">
+                    <h3>3. Set up OnPass on the new machine</h3>
+                    <p>Install or build the desktop app on the destination PC, then open the login screen where import is available.</p>
+                </article>
+                <article class="tutorial-card">
+                    <h3>4. Import the exported user</h3>
+                    <p>Select the import user option and point OnPass to the exported files you transferred from the original machine.</p>
+                </article>
+                <article class="tutorial-card">
+                    <h3>5. Sign in and verify your vault</h3>
+                    <p>Log in with the imported account credentials, confirm your saved passwords are present, and remove any leftover temporary export files you no longer need.</p>
+                </article>
+            </div>
+            <div class="hero-actions" style="justify-content:center; margin-top: 28px;">
+                <a href="./download.html" class="btn btn-primary">Back to setup</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="./images/logo.png" alt="OnPass logo">
+                    <p>The tutorial stays text-first so it remains correct even when the desktop UI evolves between versions.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Site</h4>
+                    <ul>
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./download.html">Download</a></li>
+                        <li><a href="./privacy_policy.html">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Repositories</h4>
+                    <p><a href="https://github.com/AL-KHATAB/OnPass-Desktop" target="_blank" rel="noopener">OnPass Desktop</a></p>
+                    <p><a href="https://github.com/AL-KHATAB/OnPass-Extension" target="_blank" rel="noopener">OnPass Extension</a></p>
+                    <div class="social-links">
+                        <a href="https://github.com/AL-KHATAB" target="_blank" rel="noopener" aria-label="GitHub profile"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <p class="footer-note">If you later capture OnPass-specific screenshots, this guide can be extended with visuals without changing the migration sequence.</p>
+        </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
