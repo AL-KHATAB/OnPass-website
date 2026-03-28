@@ -19,10 +19,10 @@ Static website source for the OnPass project.
 
 ## Development
 
-```bash
-npm install
-npm run dev
-```
+This site is plain static HTML, CSS, and JavaScript.
+
+- Open `index.html` directly in a browser for a quick local check
+- Or publish the repository through GitHub Pages for the hosted version
 
 ## Notes
 
