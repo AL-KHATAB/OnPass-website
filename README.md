@@ -1,29 +1,38 @@
-﻿# OnPass Website
+# OnPass - Local-First Password Management
 
-Static website source for the OnPass project.
+Welcome to the official website repository of OnPass, a local-first password manager built around a Windows desktop vault and a browser extension.
 
-## What it documents
+## About OnPass
 
-- OnPass Desktop: the Windows application that stores the encrypted vault and serves the localhost API
-- OnPass Extension: the browser extension that connects to the desktop app for local autofill
-- OnPass architecture: a local-first password manager workflow with no remote vault dependency
+OnPass is a password manager designed to give users direct control over their credential security. Unlike cloud-based solutions, OnPass keeps sensitive data on the user's device, protects it with encryption, and connects the browser extension to the desktop app through a localhost bridge instead of a remote vault service.
 
-## Main pages
+![OnPass Website](images/OnPass-website.png)
 
-- `index.html` - landing page and project summary
-- `about.html` - architecture and design priorities
-- `download.html` - desktop and extension repository links plus setup flow
-- `export_user_tutorial.html` - export/import guide
-- `privacy_policy.html` - privacy assumptions tied to the actual implementation
-- `support.html` - GitHub-based support entry points
+## Website for OnPass
 
-## Development
+- This repository contains the static website source for the OnPass project
+- The site documents the desktop app, browser extension, setup flow, privacy model, and export/import tutorial
+- If you want to explore the live site, you can visit: [OnPass website](https://al-khatab.github.io/OnPass-website/index.html)
 
-This site is plain static HTML, CSS, and JavaScript.
+## Why Choose OnPass?
 
-- Open `index.html` directly in a browser for a quick local check
-- Or publish the repository through GitHub Pages for the hosted version
+- **Local-First Storage**: Your vault stays on your machine instead of depending on a cloud backend
+- **Desktop + Browser Integration**: The extension connects to the desktop app through authenticated localhost endpoints
+- **Reliable Autofill**: The browser extension ranks matching credentials and surfaces them directly on login pages
+- **Practical Security**: The project focuses on encrypted storage, explicit trust boundaries, and user-controlled export/import workflows
 
-## Notes
+## Project Components
 
-This site was adapted from an earlier website source and rewritten to reflect the current OnPass desktop and extension projects.
+### [OnPass Desktop](https://github.com/AL-KHATAB/OnPass-Desktop)
+
+The Windows application that stores the encrypted vault, manages login flows, and serves the local API used by the extension.
+
+### [OnPass Extension](https://github.com/AL-KHATAB/OnPass-Extension)
+
+The browser extension that connects to the signed-in desktop app and provides popup search, inline autofill, and domain-aware credential matching.
+
+## Support
+
+- Use the website support page and GitHub repositories for project-related help and issue tracking
+
+Ready to explore OnPass? Browse the website source here and use the linked desktop and extension repositories to view the full project.
